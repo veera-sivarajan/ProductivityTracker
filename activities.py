@@ -4,7 +4,7 @@ activities_list = ["Studying(3)", "Completing Assignments", "Coding", "Running",
 #No. of activites = 12
 #No. of active hours in a day = 16.5hrs 5am - 9:30pm
 
-activities_dict = {
+activities_time = {
     "Studying" : 3,
     "Assignments" : 3,
     "Coding" : 2,
@@ -17,10 +17,12 @@ activities_dict = {
     "Misc:" : 1.5
 }
 points = 0
-for activity in activities_dict:
+for activity in activities_time:
     if check(activity):
-        points += activities_dict[activity]
-
+         points += check_time(activities_time[activity])
+        
+        
 print("Today's score: " + str(points))
-    
-    
+
+
+
