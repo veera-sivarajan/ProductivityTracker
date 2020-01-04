@@ -11,7 +11,7 @@ def check(activity):
 def check_time(required_time):
     time_spent = float(input("Enter time spent:"))
     if time_spent >= required_time:
-        return time_spent
+        return required_time
     else:
         return 0
 
