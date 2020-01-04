@@ -1,5 +1,3 @@
-
-
 def check(activity):
     result = False
     print("Completed " + activity + "?:")
