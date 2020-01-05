@@ -1,5 +1,7 @@
 from datetime import datetime
 from check import *
+from convertlist import *
+from readwrite import *
 
 date_today = datetime.now() 
 date = int(str(date_today)[8:10])
@@ -26,4 +28,11 @@ for activity in activities_time:
 
 x, y = (date, points)
 data_list.append(tuple((x, y)))
-print(data_list)
+write(data_list)
+lis = read()
+readdata = list()
+x_list, y_list = convertlist(lis)	
+print(x_list, y_list)
+
+
+
