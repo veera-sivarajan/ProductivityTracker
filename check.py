@@ -1,3 +1,6 @@
+#blah blah blah
+
+
 def check(activity):
     result = False
     print("Completed " + activity + "?:")

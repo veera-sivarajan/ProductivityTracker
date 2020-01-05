@@ -1,9 +1,11 @@
 from datetime import datetime
 from check import *
-activitiles_list = ["Studying(3)", "Completing Assignments", "Coding", "Running", "Reading", "Playing Table Tennis", "Waking up early", "Socializing", "Writing Diary", "Talking with parents", "Attend all classes", "Clean room"]
+
 date_today = datetime.now() 
+date = int(str(date_today)[8:10])
 #No. of activites = 12
 #No. of active hours in a day = 16.5hrs 5am - 9:30pm
+data_list = list()
 
 activities_time = {
     "Studying" : 3,
@@ -21,7 +23,7 @@ points = 0
 for activity in activities_time:
     if check(activity):
         points += check_time(activities_time[activity])
-        
 
-#print("Today's score: " + str(points)) 
-
+x, y = (date, points)
+data_list.append(tuple((x, y)))
+print(data_list)
