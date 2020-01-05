@@ -2,7 +2,7 @@ from datetime import datetime
 from check import *
 from convertlist import *
 from readwrite import *
-
+from plot import *
 date_today = datetime.now() 
 date = int(str(date_today)[8:10])
 #No. of activites = 12
