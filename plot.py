@@ -3,5 +3,8 @@ def plot(x, y):
 	plt.xlabel('Date')
 	plt.ylabel('Points')
 	plt.title('Productivity Tracker')
-	plt.plot(x, y)
+	plt.scatter(x, y)
 	plt.show()
+
+
+

@@ -32,7 +32,7 @@ write(data_list)
 lis = read()
 readdata = list()
 x_list, y_list = convertlist(lis)	
-print(x_list, y_list)
+plot(x_list, y_list)
 
 
 
